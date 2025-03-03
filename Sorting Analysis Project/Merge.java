@@ -6,7 +6,7 @@ public class Merge<T> implements Sorter<T> {
     /** Establishes ordering of type T */
     private Comparator<T> orderBy;
 
-    /** Counter of compare operations */
+    /** Counter of compare operations and loop iterations */
     long count = 0;
 
 
