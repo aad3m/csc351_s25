@@ -31,6 +31,21 @@ public class Insertion<T> implements Sorter<T> {
         // TODO ___________ COMPLETE INSERTION SORT BELOW __________________
         // ________________   IMPORTANT TO COMMENT YOUR CODE _______________
 
+        // Iterate through the array
+        for (int j = 1; j < array.length; j++) {
+            // Set key to current element
+            T key = array[j];
+            // Insert array[j] into the sorted sequence array[1..j-1]
+            int i = j - 1;
+            while (i >= 0 && orderBy.compare(array[i], key) > 0) {
+                array[i + 1] = array[i];
+                i = i - 1;
+                count++;
+            }
+            count++;
+            array[i + 1] = key;
+        }
+
 
 
         // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
