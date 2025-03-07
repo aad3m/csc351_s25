@@ -89,10 +89,10 @@ public class Experiment {
 				algorithmString = "radix";
 				algo = new Radix<AlphaNumeric>(AlphaNumeric.numberGetter);
 				break;
-			//case "quick": // not yet implemented
-				//title = "Sorting with RANDOMIZED QUICK"
-				//algo = new Quick<AlphaNumeric>(orderBy);
-				//break;
+			case "quick": // not yet implemented
+				algorithmString = "randomized quick";
+				algo = new Quick<AlphaNumeric>(orderBy);
+				break;
 			default:
 				System.out.println("Algorithm "+args[0]+" not valid.");
 				return;

@@ -60,10 +60,10 @@ public class Test {
     				algo = new Radix<AlphaNumeric>(AlphaNumeric.numberGetter);
     				testAlpha = false;
     				break;
-    			//case "quick":
-    				//title = "TESTING QUICK"
-    				//algo = new Quick<AlphaNumeric>(orderBy);
-    				//break;
+    			case "quick":
+    				title = "TESTING QUICK";
+    				algo = new Quick<AlphaNumeric>(orderBy);
+    				break;
     			default:
     				// User specified something not recognized
     				System.out.println("No test for algo "+args[i]);
